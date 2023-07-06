@@ -178,6 +178,8 @@ def write(file, theme, mode):
     file.write("foreground %s\n" % (on_surface_hex))	
     file.write("selection_background %s\n" % (primary_hex))
     file.write("selection_foreground %s\n" % (on_primary_hex))
+    file.write("cursor %s\n" % (primary_hex))
+    file.write("cursor_text_color %s\n" % (on_primary_hex))
 
     file.write("macos_titlebar_color %s\n" % (surface_container_highest_hex))
     file.write("wayland_titlebar_color %s\n" % (surface_container_highest_hex))
