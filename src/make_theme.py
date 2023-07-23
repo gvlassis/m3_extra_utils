@@ -5,6 +5,7 @@ import color_defs
 import PIL.Image
 import kitty
 import vscode
+import matplotlib
 
 # If the image has more pixels than the threshold, it would take too much time for the source color to be extracted. Therefore, in such a case the image is resized.
 PIXELS_THRESHOLD = 100*100
@@ -51,6 +52,7 @@ parser.add_argument("-w", "--wheel", help="Add the 12 color wheel colors as cust
 # A theme in Kitty is just a .conf file containing kitty settings. You can also create your own themes as .conf files. Put them in ~/.config/kitty/themes. When you select a theme, the kitten simply copies the .conf file to ~/.config/kitty/current-theme.conf and adds an include for current-theme.conf to kitty.conf. 
 parser.add_argument("--kitty", metavar="PATH", help="Generate a Kitty theme file at the given path", type=os.path.abspath)
 parser.add_argument("--vscode", metavar="PATH", help="Generate a VS Code theme file at the given path", type=os.path.abspath)
+parser.add_argument("--matplotlib", metavar="PATH", help="Generate a Matplotlib style sheet", type=os.path.abspath)
 parser.add_argument("-l", "--light", help="Generate light theme files instead of dark ones", action="store_true")
 group.add_argument("-s", "--source", metavar="HEX", help="Source color", type=str, default="#7851f9")
 group.add_argument("-i", "--image", metavar="PATH", help="The image from which to extract the source color", type=os.path.abspath)
@@ -91,3 +93,7 @@ if args.kitty is not None:
 if args.vscode is not None:
 	with open(args.vscode, "w") as file:
 		vscode.write(file, theme, mode)
+
+if args.matplotlib is not None:
+	with open(args.matplotlib, "w") as file:
+		matplotlib.write(file, theme, mode)
