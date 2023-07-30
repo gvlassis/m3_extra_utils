@@ -80,7 +80,7 @@ def write(file, mode, scheme, scheme_8, scheme_wheel):
             "tab.unfocusedHoverBackground": mcu.hexFromArgb(scheme.get_primary()),
             "editor.background": mcu.hexFromArgb(scheme.get_surfaceContainer()),
             "editor.foreground": mcu.hexFromArgb(scheme.get_onSurface()),
-            "editorLineNumber.foreground": mcu.hexFromArgb(scheme.get_secondaryContainer()),
+            "editorLineNumber.foreground": mcu.hexFromArgb(scheme.get_onSurface()),
             "editorLineNumber.activeForeground": mcu.hexFromArgb(scheme.get_primary()),
             "editorCursor.background": mcu.hexFromArgb(scheme.get_onPrimary()),
             "editorCursor.foreground": mcu.hexFromArgb(scheme.get_primary()),
