@@ -15,16 +15,15 @@ PIXELS_THRESHOLD = 100*100
 
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 group = parser.add_mutually_exclusive_group()
-parser.add_argument("-8", "--eight", help="Add the 8 3-bit colors as custom colors", action="store_true")
-parser.add_argument("-w", "--wheel", help="Add the 12 color wheel colors as custom colors", action="store_true")
 group.add_argument("-s", "--source", metavar="HEX", help="Source color", type=str, default="#7851f9")
 group.add_argument("-i", "--image", metavar="PATH", help="The image from which to extract the source color", type=os.path.abspath)
 parser.add_argument("-l", "--light", help="Generate light schemes instead of dark schemes", action="store_true")
 parser.add_argument("--scheme", help="Also print default scheme", action="store_true")
-# A theme in Kitty is just a .conf file containing kitty settings. You can also create your own themes as .conf files. Put them in ~/.config/kitty/themes. When you select a theme, the kitten simply copies the .conf file to ~/.config/kitty/current-theme.conf and adds an include for current-theme.conf to kitty.conf. 
+parser.add_argument("-8", "--eight", help="Add the 8 3-bit colors as custom colors", action="store_true")
+parser.add_argument("-w", "--wheel", help="Add the 12 color wheel colors as custom colors", action="store_true")
 parser.add_argument("--kitty", metavar="PATH", help="Generate a Kitty theme file at the given path", type=os.path.abspath)
 parser.add_argument("--vscode", metavar="PATH", help="Generate a VS Code theme file at the given path", type=os.path.abspath)
-parser.add_argument("--matplotlib", metavar="PATH", help="Generate a Matplotlib style sheet at the given path", type=os.path.abspath)
+parser.add_argument("--matplotlib", metavar="PATH", help="Generate a Matplotlib theme file at the given path", type=os.path.abspath)
 args=parser.parse_args()
 
 custom_colors = []

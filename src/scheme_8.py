@@ -88,22 +88,22 @@ class Scheme8:
         # Blended white is not really white
 
         return Scheme8({
-            "black": theme["palettes"]["neutral"].tone(10),
-            "red": theme["palettes"]["error"].tone(55),
-            "green": green_tonal_palette.tone(55),
-            "yellow": yellow_tonal_palette.tone(60), 
-            "blue": blue_tonal_palette.tone(60),
-            "magenta": magenta_tonal_palette.tone(55),
-            "cyan": cyan_tonal_palette.tone(60),
-            "white": theme["palettes"]["neutral"].tone(80),
+            "black": theme["palettes"]["neutral"].tone(1),
+            "red": theme["palettes"]["error"].tone(45),
+            "green": green_tonal_palette.tone(35),
+            "yellow": yellow_tonal_palette.tone(45), 
+            "blue": blue_tonal_palette.tone(40),
+            "magenta": magenta_tonal_palette.tone(30),
+            "cyan": cyan_tonal_palette.tone(45),
+            "white": theme["palettes"]["neutral"].tone(89),
             "bright_black": theme["palettes"]["neutral"].tone(40),
             "bright_red": theme["palettes"]["error"].tone(60),
-            "bright_green": green_tonal_palette.tone(60),
-            "bright_yellow": yellow_tonal_palette.tone(65),
-            "bright_blue": blue_tonal_palette.tone(65),
-            "bright_magenta": magenta_tonal_palette.tone(60),
+            "bright_green": green_tonal_palette.tone(50),
+            "bright_yellow": yellow_tonal_palette.tone(55),
+            "bright_blue": blue_tonal_palette.tone(50),
+            "bright_magenta": magenta_tonal_palette.tone(45),
             "bright_cyan": cyan_tonal_palette.tone(55),
-            "bright_white": theme["palettes"]["neutral"].tone(99)
+            "bright_white": theme["palettes"]["neutral"].tone(100)
         })
 
     @staticmethod
@@ -123,22 +123,22 @@ class Scheme8:
         # Blended white is not really white
 
         return Scheme8({
-            "black": theme["palettes"]["neutral"].tone(5),
-            "red": theme["palettes"]["error"].tone(60),
-            "green": green_tonal_palette.tone(75),
-            "yellow": yellow_tonal_palette.tone(85), 
-            "blue": blue_tonal_palette.tone(80),
-            "magenta": magenta_tonal_palette.tone(65),
-            "cyan": cyan_tonal_palette.tone(80),
+            "black": theme["palettes"]["neutral"].tone(0),
+            "red": theme["palettes"]["error"].tone(50),
+            "green": green_tonal_palette.tone(70),
+            "yellow": yellow_tonal_palette.tone(80), 
+            "blue": blue_tonal_palette.tone(50),
+            "magenta": magenta_tonal_palette.tone(50),
+            "cyan": cyan_tonal_palette.tone(65),
             "white": theme["palettes"]["neutral"].tone(80),
-            "bright_black": theme["palettes"]["neutral"].tone(30),
+            "bright_black": theme["palettes"]["neutral"].tone(20),
             "bright_red": theme["palettes"]["error"].tone(65),
-            "bright_green": green_tonal_palette.tone(80),
-            "bright_yellow": yellow_tonal_palette.tone(90),
-            "bright_blue": blue_tonal_palette.tone(85),
+            "bright_green": green_tonal_palette.tone(85),
+            "bright_yellow": yellow_tonal_palette.tone(95),
+            "bright_blue": blue_tonal_palette.tone(70),
             "bright_magenta": magenta_tonal_palette.tone(70),
             "bright_cyan": cyan_tonal_palette.tone(85),
-            "bright_white": theme["palettes"]["neutral"].tone(95)
+            "bright_white": theme["palettes"]["neutral"].tone(99)
         })
 
     def toJSON(self):

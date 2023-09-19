@@ -24,8 +24,8 @@ def write(file, scheme, scheme_8):
     file.write("foreground %s\n" % (mcu.hexFromArgb(scheme.get_onSurface())))	
     file.write("selection_background %s\n" % (mcu.hexFromArgb(scheme.get_primary())))
     file.write("selection_foreground %s\n" % (mcu.hexFromArgb(scheme.get_onPrimary())))
-    file.write("cursor %s\n" % (mcu.hexFromArgb(scheme.get_primary())))
-    file.write("cursor_text_color %s\n" % (mcu.hexFromArgb(scheme.get_onPrimary())))
+    file.write("cursor %s\n" % (mcu.hexFromArgb(scheme.get_tertiary())))
+    file.write("cursor_text_color %s\n" % (mcu.hexFromArgb(scheme.get_onTertiary())))
 
     file.write("macos_titlebar_color %s\n" % (mcu.hexFromArgb(scheme.get_surfaceContainerHighest())))
     file.write("wayland_titlebar_color %s\n" % (mcu.hexFromArgb(scheme.get_surfaceContainerHighest())))
@@ -34,6 +34,6 @@ def write(file, scheme, scheme_8):
     file.write("active_tab_foreground %s\n" % (mcu.hexFromArgb(scheme.get_onPrimary())))
     file.write("inactive_tab_background %s\n" % (mcu.hexFromArgb(scheme.get_secondary())))
     file.write("inactive_tab_foreground %s\n" % (mcu.hexFromArgb(scheme.get_onSecondary())))
-    file.write("tab_bar_background %s\n" % (mcu.hexFromArgb(scheme.get_surfaceContainerLow())))
+    file.write("tab_bar_background %s\n" % (mcu.hexFromArgb(scheme.get_surfaceContainerLowest())))
 
     file.write("url_color %s\n" % (mcu.hexFromArgb(scheme.get_tertiary())))
