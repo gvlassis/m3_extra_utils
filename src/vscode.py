@@ -189,8 +189,8 @@ def write(file, mode, scheme, scheme_8, scheme_wheel):
         },
         "tokenColors": [
             {
-                "scope": "storage.modifier, meta.function.decorator, markup.bold markup.italic",
-                "settings": {"fontStyle": "bold italic", "foreground": mcu.hexFromArgb(scheme_8.get_red())}
+                "scope": "markup.bold markup.italic",
+                "settings": {"fontStyle": "bold italic"}
             },
             {
                 "scope": "keyword, storage.type, markup.bold",
@@ -209,19 +209,31 @@ def write(file, mode, scheme, scheme_8, scheme_wheel):
                 "settings": {"fontStyle": "bold", "foreground": mcu.hexFromArgb(scheme.get_primary())}
             },
             {
-                "scope": "entity.name.section",
+                "scope": "heading.1",
                 "settings": {"foreground": mcu.hexFromArgb(scheme.get_primary())}
+            },
+            {
+                "scope": "heading.2, heading.3, heading.4, heading.5, heading.6",
+                "settings": {"foreground": mcu.hexFromArgb(scheme.get_secondary())}
             },
             {
                 "scope": "comment",
                 "settings": {"fontStyle": "italic", "foreground": mcu.hexFromArgb(scheme.get_tertiary())}
             },
             {
+                "scope": "markup.underline.link",
+                "settings": {"foreground": mcu.hexFromArgb(scheme.get_tertiary())}
+            },
+            {
+                "scope": "storage.modifier, meta.function.decorator",
+                "settings": {"fontStyle": "bold italic", "foreground": mcu.hexFromArgb(scheme_8.get_red())}
+            },
+            {
                 "scope": "constant.character.escape",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_red())}
             },
             {
-                "scope": "entity.name.function.python, meta.function-call",
+                "scope": "entity.name.function.python, meta.function-call, markup.list.numbered",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_green())}
             },
             {
@@ -237,17 +249,21 @@ def write(file, mode, scheme, scheme_8, scheme_wheel):
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_magenta())}
             },
             {
-                "scope": "variable.parameter.function.language, meta.function-call.arguments",
+                "scope": "variable.parameter.function.language, meta.function-call.arguments, 	markup.raw.block",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_cyan())}
             },
             {
-                "scope": "punctuation.definition.string",
+                "scope": "markup.list.unnumbered",
+                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_green())}
+            },
+            {
+                "scope": "punctuation.definition.string, markup.quote",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_blue())}
             },
             {
                 "scope": "markup.inline.raw",
-                "settings": {"foreground": "#ff0000"}
-		    }
+                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_cyan())}
+            }
         ]
     }
 
