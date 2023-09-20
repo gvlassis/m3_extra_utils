@@ -3,7 +3,7 @@ import material_color_utilities_python as mcu
 import color_defs
 import json
 
-def write(file, mode, scheme, scheme_8, scheme_wheel):
+def write(file, mode, scheme, scheme_8):
     # See https://code.visualstudio.com/api/references/theme-color and https://code.visualstudio.com/docs/getstarted/userinterface
     # focusBorder: Border for some focused elements
     # foreground: Explorer, Extensions, Command Center, Settings UI, some symbols (e.g. in integrated terminal), ... NOT activity bar, NOR status bar, NOR panel

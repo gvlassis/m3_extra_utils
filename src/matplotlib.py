@@ -1,7 +1,7 @@
 import material_color_utilities_python as mcu
 import vscode
 
-def write(file, scheme, scheme_wheel):
+def write(file, scheme):
     # file.write("lines.markerfacecolor: auto\n")     
     # file.write("lines.markeredgecolor: auto\n")        
     file.write("patch.facecolor: C0\n")
@@ -22,7 +22,7 @@ def write(file, scheme, scheme_wheel):
     file.write("axes.edgecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_onSurface())))
     file.write("axes.titlecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_secondary())))
     file.write("axes.labelcolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_onSurface())))
-    file.write("axes.prop_cycle: cycler(\"color\", [\"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\"])\n" % (mcu.hexFromArgb(scheme.get_primary()), mcu.hexFromArgb(scheme.get_tertiary()), mcu.hexFromArgb(scheme_wheel.get_violet_red()), mcu.hexFromArgb(scheme_wheel.get_violet()), mcu.hexFromArgb(scheme_wheel.get_blue_violet()), mcu.hexFromArgb(scheme_wheel.get_blue()), mcu.hexFromArgb(scheme_wheel.get_green_blue()), mcu.hexFromArgb(scheme_wheel.get_green()), mcu.hexFromArgb(scheme_wheel.get_yellow_green()), mcu.hexFromArgb(scheme_wheel.get_yellow()), mcu.hexFromArgb(scheme_wheel.get_orange_yellow()), mcu.hexFromArgb(scheme_wheel.get_orange()), mcu.hexFromArgb(scheme_wheel.get_red_orange()), mcu.hexFromArgb(scheme_wheel.get_red())))
+    file.write("axes.prop_cycle: cycler(\"color\", [\"%s\", \"%s\", \"%s\"])\n" % (mcu.hexFromArgb(scheme.get_primary()), mcu.hexFromArgb(scheme.get_tertiary()), mcu.hexFromArgb(scheme.get_primaryContainer())))
     file.write("axes3d.xaxis.panecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surfaceContainer())))
     file.write("axes3d.yaxis.panecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surfaceContainer())))
     file.write("axes3d.zaxis.panecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surfaceContainer())))
@@ -31,8 +31,8 @@ def write(file, scheme, scheme_wheel):
     file.write("ytick.color: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_onSurface())))
     file.write("ytick.labelcolor: inherit\n")
     file.write("grid.color: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surface())))
-    file.write("legend.facecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surfaceContainerHigh())))
-    file.write("legend.edgecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surfaceContainerHigh())))
+    file.write("legend.facecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surfaceContainerHighest())))
+    file.write("legend.edgecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surfaceContainerHighest())))
     file.write("legend.labelcolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_onSurface())))
     file.write("figure.facecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surface())))
     file.write("figure.edgecolor: \"#00000000\"\n")
@@ -40,18 +40,3 @@ def write(file, scheme, scheme_wheel):
     # file.write("savefig.facecolor: auto\n")
     # file.write("savefig.edgecolor: auto\n")
     # file.write("pdf.inheritcolor: False\n")
-
-    file.write("patch.linewidth: 0\n")
-    file.write("font.size: 16\n")
-    file.write("font.sans-serif: Fira Sans, DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif\n")
-    file.write("font.monospace:  JetBrains Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Computer Modern Typewriter, Andale Mono, Nimbus Mono L, Courier New, Courier, Fixed, Terminal, monospace\n")
-    file.write("axes.linewidth: 0\n")
-    file.write("axes.titlesize: x-large\n")
-    file.write("xtick.bottom: False\n")
-    file.write("ytick.left: False\n")
-    file.write("legend.framealpha: 1\n")
-    file.write("figure.titlesize: xx-large\n")
-    file.write("figure.titleweight: bold\n")
-    file.write("figure.figsize: 9.6, 5.4\n")
-    file.write("figure.constrained_layout.use: True\n")
-    file.write("savefig.format: pdf\n")
