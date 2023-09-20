@@ -1,10 +1,9 @@
 import material_color_utilities_python as mcu
-import vscode
 
 def write(file, scheme):
     # file.write("lines.markerfacecolor: auto\n")     
     # file.write("lines.markeredgecolor: auto\n")        
-    file.write("patch.facecolor: C0\n")
+    # file.write("patch.facecolor: C0\n")
     file.write("patch.edgecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_onSurface())))
     file.write("hatch.color: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_onSurface())))
     file.write("boxplot.flierprops.color: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_onSurface())))
@@ -13,10 +12,10 @@ def write(file, scheme):
     file.write("boxplot.boxprops.color: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_onSurface())))
     file.write("boxplot.whiskerprops.color: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_onSurface())))
     file.write("boxplot.capprops.color: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_onSurface())))
-    file.write("boxplot.medianprops.color: C1\n")
-    file.write("boxplot.meanprops.color: C2\n")
-    file.write("boxplot.meanprops.markerfacecolor: C2\n")
-    file.write("boxplot.meanprops.markeredgecolor: C2\n")
+    # file.write("boxplot.medianprops.color: C1\n")
+    # file.write("boxplot.meanprops.color: C2\n")
+    # file.write("boxplot.meanprops.markerfacecolor: C2\n")
+    # file.write("boxplot.meanprops.markeredgecolor: C2\n")
     file.write("text.color: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_onSurface())))
     file.write("axes.facecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surfaceContainer()))) 
     file.write("axes.edgecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_onSurface())))
@@ -27,9 +26,9 @@ def write(file, scheme):
     file.write("axes3d.yaxis.panecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surfaceContainer())))
     file.write("axes3d.zaxis.panecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surfaceContainer())))
     file.write("xtick.color: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_onSurface())))
-    file.write("xtick.labelcolor: inherit\n")
+    # file.write("xtick.labelcolor: inherit\n")
     file.write("ytick.color: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_onSurface())))
-    file.write("ytick.labelcolor: inherit\n")
+    # file.write("ytick.labelcolor: inherit\n")
     file.write("grid.color: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surface())))
     file.write("legend.facecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surfaceContainerHighest())))
     file.write("legend.edgecolor: \"%s\"\n" % (mcu.hexFromArgb(scheme.get_surfaceContainerHighest())))
