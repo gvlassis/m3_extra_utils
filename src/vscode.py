@@ -209,7 +209,7 @@ def write(file, mode, scheme, scheme_8, scheme_wheel):
                 "settings": {"fontStyle": "bold", "foreground": mcu.hexFromArgb(scheme.get_primary())}
             },
             {
-                "scope": "heading.1",
+                "scope": "heading.1, meta.separator",
                 "settings": {"foreground": mcu.hexFromArgb(scheme.get_primary())}
             },
             {
