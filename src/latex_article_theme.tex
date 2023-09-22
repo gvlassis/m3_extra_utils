@@ -1,0 +1,23 @@
+\usepackage{xcolor}
+\usepackage{sectsty}
+
+\pagecolor{surface}
+\color{onSurface}
+\makeatletter
+\renewcommand{\maketitle}{
+	\begin{center}
+
+	{\LARGE\bfseries\color{primary}\@title\par}
+
+	\vspace{1em}
+
+	{\large\color{secondary}\@author\par}
+
+	\vspace{1em}
+
+	{\large\color{secondary}\@date\par}
+
+	\end{center}
+}
+\makeatother
+\allsectionsfont{\color{secondary}}

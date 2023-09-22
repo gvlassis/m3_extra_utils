@@ -1,6 +1,4 @@
-import kitty
 import material_color_utilities_python as mcu
-import color_defs
 import json
 
 def write(file, mode, scheme, scheme_8):
@@ -9,7 +7,7 @@ def write(file, mode, scheme, scheme_8):
     # foreground: Explorer, Extensions, Command Center, Settings UI, some symbols (e.g. in integrated terminal), ... NOT activity bar, NOR status bar, NOR panel
     # disabledForeground: Some static/disabled elements (e.g. previous/next match in search)
     # descriptionForeground: e.g. descriptions in Extensions
-    # icon.foreground: Some icons in Workbench (e.g. cogs, ellipsis, side-by-side). NOT for Activity bar
+    # icon.foreground: Some icons in Workbench (e.g. cogs, ellipsis, side-by-side). NOT for Activity bar. It also controls the close and modified icons in the unfocused editor group. 
     # sash.hoverBorder: Line when resizing
     # toolbar.hoverBackground: When hovering/clicking on an action (e.g. close tab button)
     # editorCodeLens.foreground: e.g. option text in merge
@@ -35,6 +33,7 @@ def write(file, mode, scheme, scheme_8):
             "textLink.activeForeground": mcu.hexFromArgb(scheme.get_tertiary()),
             "textLink.foreground": mcu.hexFromArgb(scheme.get_tertiary()),
             "textPreformat.foreground": mcu.hexFromArgb(scheme.get_primary()),
+            "textSeparator.foreground": mcu.hexFromArgb(scheme.get_primary()),
             "toolbar.hoverBackground": "#00000000",
             "button.background": mcu.hexFromArgb(scheme.get_primary()),
             "button.foreground": mcu.hexFromArgb(scheme.get_onPrimary()),
@@ -205,6 +204,10 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"fontStyle": "underline"}
             },
             {
+                "scope": "markup.strikethrough",
+                "settings": {"fontStyle": "strikethrough"}
+            },
+            {
                 "scope": "constant.numeric, constant.language",
                 "settings": {"fontStyle": "bold", "foreground": mcu.hexFromArgb(scheme.get_primary())}
             },
@@ -245,7 +248,7 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_blue())}
             },
             {
-                "scope": "constant.other.placeholder, constant.character.format.placeholder.other",
+                "scope": "constant.other.placeholder, meta.format.percent",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_magenta())}
             },
             {

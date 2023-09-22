@@ -8,6 +8,7 @@ import scheme_8
 import kitty
 import vscode
 import matplotlib
+import latex_color_defs
 
 # If the image has more pixels than the threshold, it would take too much time for the source color to be extracted. Therefore, in such a case the image is resized.
 PIXELS_THRESHOLD = 100*100
@@ -22,6 +23,7 @@ parser.add_argument("-8", "--eight", help="Add the 8 3-bit colors as custom colo
 parser.add_argument("--kitty", metavar="PATH", help="Generate a Kitty theme file at the given path", type=os.path.abspath)
 parser.add_argument("--vscode", metavar="PATH", help="Generate a VS Code theme file at the given path", type=os.path.abspath)
 parser.add_argument("--matplotlib", metavar="PATH", help="Generate a Matplotlib theme file at the given path", type=os.path.abspath)
+parser.add_argument("--latex_color_defs", metavar="PATH", help="Generate a LaTeX color definition file at the given path", type=os.path.abspath)
 args=parser.parse_args()
 
 custom_colors = []
@@ -69,3 +71,8 @@ if args.matplotlib is not None:
     os.makedirs(os.path.dirname(args.matplotlib), exist_ok=True)
     with open(args.matplotlib, "w") as file:
         matplotlib.write(file, theme["schemes"][mode])
+
+if args.latex_color_defs is not None:
+    os.makedirs(os.path.dirname(args.latex_color_defs), exist_ok=True)
+    with open(args.latex_color_defs, "w") as file:
+        latex_color_defs.write(file, theme["schemes"][mode], scheme_8)
