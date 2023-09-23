@@ -1,8 +1,11 @@
+import os
 import material_color_utilities_python as mcu
 import color_defs
 
 def write(file, scheme, scheme_8):
-	file.write("\\usepackage{xcolor}\n\n")
+	file.write("\\NeedsTeXFormat{LaTeX2e}\n")
+	file.write("\\ProvidesPackage{%s}\n" % ( os.path.splitext(os.path.basename(file.name))[0] ))
+	file.write("\\RequirePackage{xcolor}\n\n")
 
 	file.write("\\definecolor{primary}{HTML}{%s}\n" % (mcu.hexFromArgb(scheme.get_primary())[1:]))
 	file.write("\\definecolor{primaryContainer}{HTML}{%s}\n" % (mcu.hexFromArgb(scheme.get_primaryContainer())[1:]))
