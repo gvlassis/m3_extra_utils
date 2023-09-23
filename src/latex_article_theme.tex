@@ -1,11 +1,14 @@
 \usepackage{xcolor}
+\usepackage{ragged2e}
 \usepackage{sectsty}
+\usepackage[labelfont={color=secondary}, font={color=onSurface}]{caption}
+\usepackage{listings}
 
 \pagecolor{surface}
 \color{onSurface}
 \makeatletter
 \renewcommand{\maketitle}{
-	\begin{center}
+	\begin{Center}
 
 	{\LARGE\bfseries\color{primary}\@title\par}
 
@@ -17,7 +20,14 @@
 
 	{\large\color{secondary}\@date\par}
 
-	\end{center}
+	\end{Center}
 }
 \makeatother
 \allsectionsfont{\color{secondary}}
+\lstset{
+	basicstyle=\ttfamily,
+	commentstyle=\itshape\color{tertiary},
+	stringstyle=\color{yellow},
+	numberstyle=\ttfamily\color{onSurfaceVariant},
+	backgroundcolor=\color{surfaceContainerLow}
+}
