@@ -1,20 +1,34 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{latex_article_theme}
-\RequirePackage{xcolor}
+
 \RequirePackage{m3_color_defs}
+
 \RequirePackage{ragged2e}
-\RequirePackage{sectsty}
+
+\RequirePackage{xcolor}
+	\pagecolor{surface}
+	\color{onSurface}
+
+\RequirePackage[pagestyles,explicit]{titlesec}
+	\titleformat{\section}{}{\Large\bfseries\color{secondary}\arabic{section}}{1em}{{\Large\bfseries\color{secondary}#1}}
+
 \RequirePackage[labelfont={color=secondary}, font={color=onSurface}]{caption}
+
 \RequirePackage{listings}
+	\lstset{
+		basicstyle=\ttfamily,
+		commentstyle=\itshape\color{tertiary},
+		stringstyle=\color{yellow},
+		numberstyle=\ttfamily\color{onSurfaceVariant},
+		backgroundcolor=\color{surfaceContainerLow}
+	}
+
 \RequirePackage{hyperref}
 	\hypersetup{
 		colorlinks=true,
 		allcolors=tertiary
 	}
 
-\pagecolor{surface}
-\color{onSurface}
-\makeatletter
 \renewcommand{\maketitle}{
 	\begin{Center}
 
@@ -30,12 +44,4 @@
 
 	\end{Center}
 }
-\makeatother
-\allsectionsfont{\color{secondary}}
-\lstset{
-	basicstyle=\ttfamily,
-	commentstyle=\itshape\color{tertiary},
-	stringstyle=\color{yellow},
-	numberstyle=\ttfamily\color{onSurfaceVariant},
-	backgroundcolor=\color{surfaceContainerLow}
-}
+

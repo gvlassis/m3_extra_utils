@@ -8,13 +8,13 @@ class Scheme8:
 
     def get_black(self):
         return self.props["black"]
-    
+
     def get_red(self):
         return self.props["red"]
 
     def get_green(self):
         return self.props["green"]
-    
+
     def get_yellow(self):
         return self.props["yellow"]
 
@@ -23,22 +23,22 @@ class Scheme8:
 
     def get_magenta(self):
         return self.props["magenta"]
-    
+
     def get_cyan(self):
         return self.props["cyan"]
-    
+
     def get_white(self):
         return self.props["white"]
-    
+
     def get_bright_black(self):
         return self.props["bright_black"]
-    
+
     def get_bright_red(self):
         return self.props["bright_red"]
 
     def get_bright_green(self):
         return self.props["bright_green"]
-    
+
     def get_bright_yellow(self):
         return self.props["bright_yellow"]
 
@@ -47,10 +47,10 @@ class Scheme8:
 
     def get_bright_magenta(self):
         return self.props["bright_magenta"]
-    
+
     def get_bright_cyan(self):
         return self.props["bright_cyan"]
-    
+
     def get_bright_white(self):
         return self.props["bright_white"]
 
@@ -91,12 +91,12 @@ class Scheme8:
             "black": theme["palettes"]["neutral"].tone(1),
             "red": theme["palettes"]["error"].tone(45),
             "green": green_tonal_palette.tone(35),
-            "yellow": yellow_tonal_palette.tone(45), 
+            "yellow": yellow_tonal_palette.tone(45),
             "blue": blue_tonal_palette.tone(40),
             "magenta": magenta_tonal_palette.tone(30),
             "cyan": cyan_tonal_palette.tone(45),
-            "white": theme["palettes"]["neutral"].tone(89),
-            "bright_black": theme["palettes"]["neutral"].tone(40),
+            "white": theme["palettes"]["neutral"].tone(88),
+            "bright_black": theme["palettes"]["neutral"].tone(45),
             "bright_red": theme["palettes"]["error"].tone(60),
             "bright_green": green_tonal_palette.tone(50),
             "bright_yellow": yellow_tonal_palette.tone(55),
@@ -126,15 +126,15 @@ class Scheme8:
             "black": theme["palettes"]["neutral"].tone(0),
             "red": theme["palettes"]["error"].tone(50),
             "green": green_tonal_palette.tone(70),
-            "yellow": yellow_tonal_palette.tone(80), 
+            "yellow": yellow_tonal_palette.tone(78),
             "blue": blue_tonal_palette.tone(50),
             "magenta": magenta_tonal_palette.tone(50),
             "cyan": cyan_tonal_palette.tone(65),
             "white": theme["palettes"]["neutral"].tone(80),
-            "bright_black": theme["palettes"]["neutral"].tone(20),
+            "bright_black": theme["palettes"]["neutral"].tone(45),
             "bright_red": theme["palettes"]["error"].tone(65),
             "bright_green": green_tonal_palette.tone(85),
-            "bright_yellow": yellow_tonal_palette.tone(95),
+            "bright_yellow": yellow_tonal_palette.tone(90),
             "bright_blue": blue_tonal_palette.tone(70),
             "bright_magenta": magenta_tonal_palette.tone(70),
             "bright_cyan": cyan_tonal_palette.tone(85),
