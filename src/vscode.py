@@ -240,7 +240,7 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_green())}
             },
             {
-                "scope": "string",
+                "scope": "string, constant.numeric.integer.shell",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_yellow())}
             },
             {
@@ -248,7 +248,7 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_blue())}
             },
             {
-                "scope": "constant.other.placeholder, meta.format.percent, punctuation.definition.variable.shell, meta.parameter-expansion, variable.language.special.wildcard.shell",
+                "scope": "constant.other.placeholder, meta.format.percent, punctuation.definition.variable.shell, variable.other.normal.shell, variable.parameter.positional, meta.parameter-expansion, variable.language.special.wildcard.shell",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_magenta())}
             },
             {
