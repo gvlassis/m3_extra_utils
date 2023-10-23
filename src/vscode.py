@@ -7,7 +7,7 @@ def write(file, mode, scheme, scheme_8):
     # foreground: Explorer, Extensions, Command Center, Settings UI, some symbols (e.g. in integrated terminal), ... NOT activity bar, NOR status bar, NOR panel
     # disabledForeground: Some static/disabled elements (e.g. previous/next match in search)
     # descriptionForeground: e.g. descriptions in Extensions
-    # icon.foreground: Some icons in Workbench (e.g. cogs, ellipsis, side-by-side). NOT for Activity bar. It also controls the close and modified icons in the unfocused editor group. 
+    # icon.foreground: Some icons in Workbench (e.g. cogs, ellipsis, side-by-side). NOT for Activity bar. It also controls the close and modified icons in the unfocused editor group.
     # sash.hoverBorder: Line when resizing
     # toolbar.hoverBackground: When hovering/clicking on an action (e.g. close tab button)
     # editorCodeLens.foreground: e.g. option text in merge
@@ -106,10 +106,10 @@ def write(file, mode, scheme, scheme_8):
             "editorBracketHighlight.unexpectedBracket.foreground": mcu.hexFromArgb(scheme_8.get_bright_red()),
             "editorOverviewRuler.background": "#00000000",
             "editorOverviewRuler.border": "#00000000",
-            "editorOverviewRuler.findMatchForeground": "#00000000", 
-            "editorOverviewRuler.rangeHighlightForeground": "#00000000", 
+            "editorOverviewRuler.findMatchForeground": "#00000000",
+            "editorOverviewRuler.rangeHighlightForeground": "#00000000",
             "editorOverviewRuler.selectionHighlightForeground": "#00000000",
-            "editorOverviewRuler.wordHighlightForeground": "#00000000", 
+            "editorOverviewRuler.wordHighlightForeground": "#00000000",
             "editorOverviewRuler.wordHighlightStrongForeground": "#00000000",
             "editorOverviewRuler.wordHighlightTextForeground": "#00000000",
             "editorOverviewRuler.modifiedForeground": "#00000000",
@@ -178,7 +178,7 @@ def write(file, mode, scheme, scheme_8):
             "terminalCursor.background": mcu.hexFromArgb(scheme.get_onTertiary()),
             "terminalCursor.foreground": mcu.hexFromArgb(scheme.get_tertiary()),
             "walkThrough.embeddedEditorBackground": mcu.hexFromArgb(scheme.get_surfaceContainerLow()),
-            "walkThrough.stepTitle.foreground": mcu.hexFromArgb(scheme.get_onSurface()), 
+            "walkThrough.stepTitle.foreground": mcu.hexFromArgb(scheme.get_onSurface()),
             "settings.headerForeground": mcu.hexFromArgb(scheme.get_onSurface()),
             "settings.modifiedItemIndicator": mcu.hexFromArgb(scheme.get_tertiary()),
             "settings.settingsHeaderHoverForeground": mcu.hexFromArgb(scheme.get_onSurface()),
@@ -248,11 +248,11 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_blue())}
             },
             {
-                "scope": "constant.other.placeholder, meta.format.percent",
+                "scope": "constant.other.placeholder, meta.format.percent, punctuation.definition.variable.shell, variable.other.normal.shell, variable.language.special.wildcard.shell",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_magenta())}
             },
             {
-                "scope": "variable.parameter.function.language, meta.function-call.arguments, 	markup.raw.block",
+                "scope": "variable.parameter.function.language, meta.function-call.arguments, markup.raw.block, constant.other.option.dash.shell, constant.other.option",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_cyan())}
             },
             {
