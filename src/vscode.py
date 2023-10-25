@@ -213,11 +213,11 @@ def write(file, mode, scheme, scheme_8):
             },
             {
                 "scope": "heading.1, meta.separator",
-                "settings": {"foreground": mcu.hexFromArgb(scheme.get_primary())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme.get_primary())}
             },
             {
                 "scope": "heading.2, heading.3, heading.4, heading.5, heading.6",
-                "settings": {"foreground": mcu.hexFromArgb(scheme.get_secondary())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme.get_secondary())}
             },
             {
                 "scope": "comment",
@@ -225,7 +225,7 @@ def write(file, mode, scheme, scheme_8):
             },
             {
                 "scope": "markup.underline.link",
-                "settings": {"foreground": mcu.hexFromArgb(scheme.get_tertiary())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme.get_tertiary())}
             },
             {
                 "scope": "storage.modifier, meta.function.decorator",
@@ -233,39 +233,39 @@ def write(file, mode, scheme, scheme_8):
             },
             {
                 "scope": "constant.character.escape",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_red())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_red())}
             },
             {
                 "scope": "entity.name.function.python, meta.function-call, markup.list.numbered",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_green())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_green())}
             },
             {
                 "scope": "string, constant.numeric.integer.shell, constant.language.true.shell, constant.language.false.shell",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_yellow())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_yellow())}
             },
             {
                 "scope": "entity.name.type, entity.name.struct, entity.name.enum, entity.name.interface, entity.name.tag",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_blue())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_blue())}
             },
             {
                 "scope": "constant.other.placeholder, meta.format.percent, punctuation.definition.variable.shell, variable.other.normal.shell, variable.parameter.positional, meta.parameter-expansion, variable.language.special.wildcard.shell",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_magenta())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_magenta())}
             },
             {
                 "scope": "variable.parameter.function.language, meta.function-call.arguments, markup.raw.block, constant.other.option.dash.shell, constant.other.option",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_cyan())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_cyan())}
             },
             {
                 "scope": "markup.list.unnumbered",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_green())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_bright_green())}
             },
             {
                 "scope": "punctuation.definition.string, markup.quote",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_blue())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_bright_blue())}
             },
             {
                 "scope": "markup.inline.raw",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_cyan())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_bright_cyan())}
             }
         ]
     }
