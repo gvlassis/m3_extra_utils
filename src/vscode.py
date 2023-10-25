@@ -240,7 +240,7 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_green())}
             },
             {
-                "scope": "string, constant.numeric.integer.shell",
+                "scope": "string, constant.numeric.integer.shell, constant.language.false.shell, constant.language.true.shell",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_yellow())}
             },
             {
