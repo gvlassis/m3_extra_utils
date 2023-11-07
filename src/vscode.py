@@ -189,23 +189,23 @@ def write(file, mode, scheme, scheme_8):
         "tokenColors": [
             {
                 "scope": "markup.bold markup.italic",
-                "settings": {"fontStyle": "bold italic"}
+                "settings": {"fontStyle": "bold italic", "foreground": mcu.hexFromArgb(scheme.get_onSurface())}
             },
             {
                 "scope": "keyword, storage.type, markup.bold",
-                "settings": {"fontStyle": "bold"}
+                "settings": {"fontStyle": "bold", "foreground": mcu.hexFromArgb(scheme.get_onSurface())}
             },
             {
                 "scope": "markup.italic",
-                "settings": {"fontStyle": "italic"}
+                "settings": {"fontStyle": "italic", "foreground": mcu.hexFromArgb(scheme.get_onSurface())}
             },
             {
                 "scope": "markup.underline",
-                "settings": {"fontStyle": "underline"}
+                "settings": {"fontStyle": "underline", "foreground": mcu.hexFromArgb(scheme.get_onSurface())}
             },
             {
                 "scope": "markup.strikethrough",
-                "settings": {"fontStyle": "strikethrough"}
+                "settings": {"fontStyle": "strikethrough", "foreground": mcu.hexFromArgb(scheme.get_onSurface())}
             },
             {
                 "scope": "constant.numeric, constant.language",
@@ -236,7 +236,7 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_red())}
             },
             {
-                "scope": "entity.name.function.python, meta.function-call, markup.list.numbered",
+                "scope": "entity.name.function, meta.function-call, markup.list.numbered",
                 "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_green())}
             },
             {
