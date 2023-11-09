@@ -189,26 +189,30 @@ def write(file, mode, scheme, scheme_8):
         "tokenColors": [
             {
                 "scope": "markup.bold markup.italic",
-                "settings": {"fontStyle": "bold italic", "foreground": mcu.hexFromArgb(scheme.get_onSurface())}
+                "settings": {"fontStyle": "bold italic"}
             },
             {
-                "scope": "keyword, storage.type, markup.bold",
+                "scope": "keyword, storage.type",
                 "settings": {"fontStyle": "bold", "foreground": mcu.hexFromArgb(scheme.get_onSurface())}
+            },
+			{
+                "scope": "markup.bold",
+                "settings": {"fontStyle": "bold"}
             },
             {
                 "scope": "markup.italic",
-                "settings": {"fontStyle": "italic", "foreground": mcu.hexFromArgb(scheme.get_onSurface())}
+                "settings": {"fontStyle": "italic"}
             },
             {
                 "scope": "markup.underline",
-                "settings": {"fontStyle": "underline", "foreground": mcu.hexFromArgb(scheme.get_onSurface())}
+                "settings": {"fontStyle": "underline"}
             },
             {
                 "scope": "markup.strikethrough",
-                "settings": {"fontStyle": "strikethrough", "foreground": mcu.hexFromArgb(scheme.get_onSurface())}
+                "settings": {"fontStyle": "strikethrough"}
             },
             {
-                "scope": "constant.numeric, constant.language",
+                "scope": "constant.numeric.float, constant.numeric.dec, constant.numeric.hex, constant.numeric.bin, constant.language.python, keyword.control.table.cell.latex",
                 "settings": {"fontStyle": "bold", "foreground": mcu.hexFromArgb(scheme.get_primary())}
             },
             {
@@ -236,11 +240,11 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_red())}
             },
             {
-                "scope": "entity.name.function, meta.function-call, markup.list.numbered",
+                "scope": "entity.name.function, meta.function-call, markup.list.numbered, support.function",
                 "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_green())}
             },
             {
-                "scope": "string, constant.numeric.integer.shell, constant.language.true.shell, constant.language.false.shell",
+                "scope": "string, support.class.math.block",
                 "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_yellow())}
             },
             {
@@ -248,11 +252,11 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_blue())}
             },
             {
-                "scope": "constant.other.placeholder, meta.format.percent, punctuation.definition.variable.shell, variable.other.normal.shell, variable.parameter.positional, meta.parameter-expansion, variable.language.special.wildcard.shell",
+                "scope": "constant.other.placeholder, meta.format.percent, punctuation.definition.variable.shell, variable.other.normal.shell, variable.parameter.positional, meta.parameter-expansion, variable.language.special.wildcard.shell, constant.character.math",
                 "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_magenta())}
             },
             {
-                "scope": "variable.parameter.function.language, meta.function-call.arguments, markup.raw.block, constant.other.option.dash.shell, constant.other.option",
+                "scope": "variable.parameter.function.language, meta.function-call.arguments, markup.raw.block, constant.other.option",
                 "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_cyan())}
             },
             {
