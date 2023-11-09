@@ -212,7 +212,7 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"fontStyle": "strikethrough"}
             },
             {
-                "scope": "constant.numeric.float, constant.numeric.dec, constant.numeric.hex, constant.numeric.bin, constant.language.python, keyword.control.table.cell.latex",
+                "scope": "constant.numeric.float, constant.numeric.dec, constant.numeric.hex, constant.numeric.bin, constant.numeric.decimal, constant.numeric.integer.binary, constant.numeric.integer.octal, constant.numeric.integer.decimal, constant.numeric.integer.hexadecimal, constant.numeric.integer.yaml, constant.numeric.integer.ruby, constant.numeric.dart, constant.numeric.json, constant.numeric.julia, constant.numeric.perl, constant.language.bool, constant.language.boolean, constant.language.python, constant.language.go, constant.language.dart, constant.language.r, constant.language.java, constant.language.lua, constant.language.json, constant.language.c, constant.language.false.cpp, constant.language.true.cpp, constant.language.julia, constant.language.ruby, constant.language.null, constant.language.nullptr, constant.language.NULL, constant.language.nan, constant.language.infinity, keyword.control.table.cell.latex",
                 "settings": {"fontStyle": "bold", "foreground": mcu.hexFromArgb(scheme.get_primary())}
             },
             {
@@ -252,7 +252,7 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_blue())}
             },
             {
-                "scope": "constant.other.placeholder, meta.format.percent, punctuation.definition.variable.shell, variable.other.normal.shell, variable.parameter.positional, meta.parameter-expansion, variable.language.special.wildcard.shell, constant.character.math",
+                "scope": "constant.other.placeholder, meta.format.percent, punctuation.definition.variable.shell, meta.parameter-expansion, variable.language.special.wildcard.shell, constant.character.math",
                 "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_magenta())}
             },
             {
