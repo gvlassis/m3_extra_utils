@@ -224,7 +224,7 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"foreground": mcu.hexFromArgb(scheme.get_secondary())}
             },
             {
-                "scope": "comment",
+                "scope": "comment.line",
                 "settings": {"fontStyle": "italic", "foreground": mcu.hexFromArgb(scheme.get_tertiary())}
             },
             {
@@ -236,27 +236,31 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"fontStyle": "bold italic", "foreground": mcu.hexFromArgb(scheme_8.get_red())}
             },
             {
-                "scope": "constant.character.escape",
+                "scope": "constant.character.escape, keyword.rainbow2",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_red())}
             },
             {
-                "scope": "entity.name.function, meta.function-call, markup.list.numbered, support.function",
+                "scope": "entity.name.function, meta.function-call, markup.list.numbered, support.function, entity.name.function.rainbow3",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_green())}
             },
             {
-                "scope": "string, support.class.math.block",
+                "scope": "string, support.class.math.block, comment.rainbow4",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_yellow())}
             },
             {
-                "scope": "entity.name.type, entity.name.struct, entity.name.enum, entity.name.interface, entity.name.tag",
+                "scope": "entity.name.type, entity.name.struct, entity.name.enum, entity.name.interface, entity.name.tag, string.rainbow5",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_blue())}
             },
             {
-                "scope": "constant.other.placeholder, meta.format.percent, punctuation.definition.variable.shell, meta.parameter-expansion, variable.language.special.wildcard.shell, constant.character.math",
+                "scope": "constant.other.placeholder, meta.format.percent, punctuation.definition.variable.shell, meta.parameter-expansion, variable.language.special.wildcard.shell, constant.character.math, variable.parameter.rainbow6",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_magenta())}
             },
+			{
+                "scope": "keyword.control.table",
+                "settings": {"fontStyle": "bold", "foreground": mcu.hexFromArgb(scheme_8.get_cyan())}
+            },
             {
-                "scope": "variable.parameter.function.language, meta.function-call.arguments, markup.raw.block, constant.other.option, keyword.control.table",
+                "scope": "variable.parameter.function.language, meta.function-call.arguments, markup.raw.block, constant.other.option, constant.numeric.rainbow7",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_cyan())}
             },
             {
@@ -264,11 +268,15 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_green())}
             },
             {
-                "scope": "punctuation.definition.string, markup.quote",
+                "scope": "punctuation.definition.string, markup.quote, entity.name.type.rainbow8",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_blue())}
             },
+			{
+                "scope": "markup.bold.rainbow9",
+                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_magenta())}
+            },
             {
-                "scope": "markup.inline.raw",
+                "scope": "markup.inline.raw, invalid.rainbow10",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_cyan())}
             }
         ]
