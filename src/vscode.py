@@ -192,8 +192,8 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"fontStyle": "bold italic"}
             },
             {
-                "scope": "keyword, storage.type",
-                "settings": {"fontStyle": "bold", "foreground": mcu.hexFromArgb(scheme.get_onSurface())}
+                "scope": "keyword.control, storage.type",
+                "settings": {"fontStyle": "bold"}
             },
 			{
                 "scope": "markup.bold",
@@ -212,16 +212,16 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"fontStyle": "strikethrough"}
             },
             {
-                "scope": "constant.numeric.float, constant.numeric.dec, constant.numeric.hex, constant.numeric.bin, constant.numeric.decimal, constant.numeric.integer.binary, constant.numeric.integer.octal, constant.numeric.integer.decimal, constant.numeric.integer.hexadecimal, constant.numeric.integer.yaml, constant.numeric.integer.ruby, constant.numeric.dart, constant.numeric.json, constant.numeric.julia, constant.numeric.perl, constant.language.bool, constant.language.boolean, constant.language.python, constant.language.go, constant.language.dart, constant.language.r, constant.language.java, constant.language.lua, constant.language.json, constant.language.c, constant.language.false.cpp, constant.language.true.cpp, constant.language.julia, constant.language.ruby, constant.language.null, constant.language.nullptr, constant.language.NULL, constant.language.nan, constant.language.infinity, keyword.control.table.cell.latex",
+                "scope": "constant.numeric.float, constant.numeric.dec, constant.numeric.hex, constant.numeric.bin, constant.numeric.decimal, constant.numeric.integer.binary, constant.numeric.integer.octal, constant.numeric.integer.decimal, constant.numeric.integer.hexadecimal, constant.numeric.integer.yaml, constant.numeric.integer.ruby, constant.numeric.dart, constant.numeric.json, constant.numeric.julia, constant.numeric.perl, constant.language.bool, constant.language.boolean, constant.language.python, constant.language.go, constant.language.dart, constant.language.r, constant.language.java, constant.language.lua, constant.language.json, constant.language.c, constant.language.false.cpp, constant.language.true.cpp, constant.language.julia, constant.language.ruby, constant.language.null, constant.language.nullptr, constant.language.NULL, constant.language.nan, constant.language.infinity",
                 "settings": {"fontStyle": "bold", "foreground": mcu.hexFromArgb(scheme.get_primary())}
             },
             {
                 "scope": "heading.1, meta.separator",
-                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme.get_primary())}
+                "settings": {"foreground": mcu.hexFromArgb(scheme.get_primary())}
             },
             {
                 "scope": "heading.2, heading.3, heading.4, heading.5, heading.6",
-                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme.get_secondary())}
+                "settings": {"foreground": mcu.hexFromArgb(scheme.get_secondary())}
             },
             {
                 "scope": "comment",
@@ -229,7 +229,7 @@ def write(file, mode, scheme, scheme_8):
             },
             {
                 "scope": "markup.underline.link",
-                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme.get_tertiary())}
+                "settings": {"foreground": mcu.hexFromArgb(scheme.get_tertiary())}
             },
             {
                 "scope": "storage.modifier, meta.function.decorator",
@@ -237,39 +237,39 @@ def write(file, mode, scheme, scheme_8):
             },
             {
                 "scope": "constant.character.escape",
-                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_red())}
+                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_red())}
             },
             {
                 "scope": "entity.name.function, meta.function-call, markup.list.numbered, support.function",
-                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_green())}
+                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_green())}
             },
             {
                 "scope": "string, support.class.math.block",
-                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_yellow())}
+                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_yellow())}
             },
             {
                 "scope": "entity.name.type, entity.name.struct, entity.name.enum, entity.name.interface, entity.name.tag",
-                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_blue())}
+                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_blue())}
             },
             {
                 "scope": "constant.other.placeholder, meta.format.percent, punctuation.definition.variable.shell, meta.parameter-expansion, variable.language.special.wildcard.shell, constant.character.math",
-                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_magenta())}
+                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_magenta())}
             },
             {
-                "scope": "variable.parameter.function.language, meta.function-call.arguments, markup.raw.block, constant.other.option",
-                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_cyan())}
+                "scope": "variable.parameter.function.language, meta.function-call.arguments, markup.raw.block, constant.other.option, keyword.control.table",
+                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_cyan())}
             },
             {
                 "scope": "markup.list.unnumbered",
-                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_bright_green())}
+                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_green())}
             },
             {
                 "scope": "punctuation.definition.string, markup.quote",
-                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_bright_blue())}
+                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_blue())}
             },
             {
                 "scope": "markup.inline.raw",
-                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_bright_cyan())}
+                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_cyan())}
             }
         ]
     }
