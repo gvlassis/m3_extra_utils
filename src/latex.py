@@ -1,6 +1,5 @@
 import os
 import material_color_utilities_python as mcu
-import color_defs
 
 def write(file, scheme, scheme_8):
 	file.write("\\NeedsTeXFormat{LaTeX2e}\n")
