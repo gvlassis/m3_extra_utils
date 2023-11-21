@@ -212,7 +212,7 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"fontStyle": "bold", "foreground": mcu.hexFromArgb(scheme.get_onSurface())}
             },
             {
-                "scope": "constant.numeric.float, constant.numeric.dec, constant.numeric.hex, constant.numeric.bin, constant.numeric.decimal, constant.numeric.integer.binary, constant.numeric.integer.octal, constant.numeric.integer.decimal, constant.numeric.integer.hexadecimal, constant.numeric.integer.yaml, constant.numeric.integer.ruby, constant.numeric.dart, constant.numeric.json, constant.numeric.julia, constant.numeric.perl, constant.numeric.css, constant.language.bool, constant.language.boolean, constant.language.python, constant.language.go, constant.language.dart, constant.language.r, constant.language.java, constant.language.lua, constant.language.json, constant.language.c, constant.language.false.cpp, constant.language.true.cpp, constant.language.julia, constant.language.ruby, constant.language.null, constant.language.nullptr, constant.language.NULL, constant.language.nan, constant.language.infinity, support.constant, constant.other.unicode-range",
+                "scope": "constant.numeric.float, constant.numeric.dec, constant.numeric.hex, constant.numeric.bin, constant.numeric.decimal, constant.numeric.integer.binary, constant.numeric.integer.octal, constant.numeric.integer.decimal, constant.numeric.integer.hexadecimal, constant.numeric.integer.yaml, constant.numeric.integer.ruby, constant.numeric.dart, constant.numeric.json, constant.numeric.julia, constant.numeric.perl, constant.numeric.css, constant.language.bool, constant.language.boolean, constant.language.python, constant.language.go, constant.language.dart, constant.language.r, constant.language.java, constant.language.lua, constant.language.json, constant.language.c, constant.language.false.cpp, constant.language.true.cpp, constant.language.julia, constant.language.ruby, constant.language.null, constant.language.nullptr, constant.language.NULL, constant.language.nan, constant.language.infinity, support.constant, constant.other.unicode-range, constant.other.color",
                 "settings": {"fontStyle": "bold", "foreground": mcu.hexFromArgb(scheme.get_primary())}
             },
             {
@@ -248,7 +248,7 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_yellow())}
             },
             {
-                "scope": "entity.name.type, entity.name.struct, entity.name.enum, entity.name.interface, entity.name.tag, string.rainbow5",
+                "scope": "entity.name.type, entity.name.struct, entity.name.enum, entity.name.interface, entity.name.tag, entity.other.attribute-name, string.rainbow5",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_blue())}
             },
             {
