@@ -208,7 +208,7 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"fontStyle": "strikethrough"}
             },
 			{
-                "scope": "keyword.control, 	keyword.operator, storage.type",
+                "scope": "keyword.control, 	keyword.operator, storage.type, meta.parameter-expansion",
                 "settings": {"fontStyle": "bold", "foreground": mcu.hexFromArgb(scheme.get_onSurface())}
             },
             {
@@ -229,7 +229,7 @@ def write(file, mode, scheme, scheme_8):
             },
             {
                 "scope": "markup.underline.link",
-                "settings": {"foreground": mcu.hexFromArgb(scheme.get_tertiary())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme.get_tertiary())}
             },
             {
                 "scope": "storage.modifier, meta.function.decorator",
@@ -237,47 +237,59 @@ def write(file, mode, scheme, scheme_8):
             },
             {
                 "scope": "constant.character.escape, keyword.rainbow2",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_red())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_red())}
             },
             {
                 "scope": "entity.name.function, meta.function-call, markup.list.numbered, support.function, entity.name.function.rainbow3",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_green())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_green())}
             },
             {
                 "scope": "string, support.class.math.block, comment.rainbow4",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_yellow())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_yellow())}
             },
             {
                 "scope": "entity.name.type, entity.name.struct, entity.name.enum, entity.name.interface, entity.name.tag, entity.other.attribute-name, string.rainbow5",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_blue())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_blue())}
             },
             {
-                "scope": "constant.other.placeholder, meta.format.percent, punctuation.definition.variable.shell, meta.parameter-expansion, variable.language.special.wildcard.shell, constant.character.math, variable.parameter.rainbow6",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_magenta())}
+                "scope": "constant.other.placeholder, meta.format.percent, punctuation.definition.variable, variable.other.normal, 	punctuation.section.array.shell, punctuation.definition.evaluation, variable.language.special.wildcard, constant.character.math, variable.parameter.rainbow6",
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_magenta())}
             },
 			{
                 "scope": "keyword.control.table",
                 "settings": {"fontStyle": "bold", "foreground": mcu.hexFromArgb(scheme_8.get_cyan())}
             },
             {
-                "scope": "variable.parameter.function.language, meta.function-call.arguments, markup.raw.block, constant.other.option, constant.numeric.rainbow7",
+                "scope": "markup.raw.block",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_cyan())}
+            },
+            {
+                "scope": "variable.parameter.function.language, meta.function-call.arguments, constant.other.option, constant.numeric.rainbow7",
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_cyan())}
             },
             {
                 "scope": "markup.list.unnumbered",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_green())}
             },
             {
-                "scope": "punctuation.definition.string, markup.quote, entity.name.type.rainbow8",
+                "scope": "markup.quote",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_blue())}
+            },
+            {
+                "scope": "punctuation.definition.string, markup.quote, entity.name.type.rainbow8",
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_bright_blue())}
             },
 			{
                 "scope": "markup.bold.rainbow9",
-                "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_magenta())}
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_bright_magenta())}
             },
             {
-                "scope": "markup.inline.raw, invalid.rainbow10",
+                "scope": "markup.inline.raw",
                 "settings": {"foreground": mcu.hexFromArgb(scheme_8.get_bright_cyan())}
+            },
+            {
+                "scope": "invalid.rainbow10",
+                "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_bright_cyan())}
             }
         ]
     }
