@@ -232,7 +232,7 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme.get_tertiary())}
             },
             {
-                "scope": "storage.modifier, meta.function.decorator",
+                "scope": "storage.modifier, meta.function.decorator, punctuation.definition.decorator",
                 "settings": {"fontStyle": "bold italic", "foreground": mcu.hexFromArgb(scheme_8.get_red())}
             },
             {
