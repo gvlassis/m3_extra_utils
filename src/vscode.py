@@ -244,7 +244,7 @@ def write(file, mode, scheme, scheme_8):
                 "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_green())}
             },
             {
-                "scope": "string, support.class.math.block, comment.rainbow4",
+                "scope": "string, comment.rainbow4",
                 "settings": {"fontStyle": "regular", "foreground": mcu.hexFromArgb(scheme_8.get_yellow())}
             },
             {
